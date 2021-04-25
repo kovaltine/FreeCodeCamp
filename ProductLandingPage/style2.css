@@ -1,0 +1,252 @@
+@media screen and (max-width: 600px) {
+  * {
+    color: cornflowerblue;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #e0d5c1;
+}
+
+/* header/nav bar */
+
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #e0d5c1;
+}
+
+#header h2 {
+  letter-spacing: 4pt;
+  font-size: smaller;
+  align-items: baseline;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#header-img {
+  display: flex;
+  width: 5%;
+  left: 0;
+}
+
+#header-img h2 {
+  padding-top: 1rem;
+}
+
+#nav-bar {
+  justify-content: flex-end;
+  background-color: #e0d5c1;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a7570;
+  text-decoration: none;
+  height: 100%;
+  width: 10rem;
+  color: #e0d5c1;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  vertical-align: middle;
+}
+
+.nav-link:hover {
+  background-color: #c97253;
+}
+
+/* <!-- welcome form --> */
+.welcome-message {
+  height: 50vh;
+  background-color: #e0d5c1;
+  color: #7a7570;
+  text-shadow: 3px 3px 3px #c97253;
+}
+
+.welcome-message h2 {
+  text-align: center;
+  padding-top: 8rem;
+  background-color: #e0d5c1;
+  font-size: 3rem;
+  letter-spacing: 4pt;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-message form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  background-color: #e0d5c1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+#email {
+  text-align: center;
+  padding: 0.5rem;
+  font-style: italic;
+  background-color: whitesmoke;
+}
+#submit {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: #7a7570;
+  color: whitesmoke;
+  letter-spacing: 2pt;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#submit:hover {
+  background-color: #c97253;
+}
+
+/* <!-- features --> */
+
+#features {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c97253;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  background-color: #d8a45b;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  justify-content: space-evenly;
+  font-size: 30px;
+  color: #d2cec2;
+  text-shadow: 3px 3px 3px #7a7570;
+  border-radius: 0.5rem;
+}
+
+.section h2 {
+  background-color: #d8a45b;
+}
+
+.fa-frog {
+  font-size: 50px;
+  color: #e0d5c1;
+  text-shadow: 3px 3px 3px #c97253;
+  background-color: #d8a45b;
+}
+
+.fa-gift {
+  font-size: 50px;
+  color: #e0d5c1;
+  text-shadow: 3px 3px 3px #c97253;
+  background-color: #d8a45b;
+}
+
+.fa-cloud-moon {
+  font-size: 50px;
+  color: #e0d5c1;
+  text-shadow: 3px 3px 3px #c97253;
+  background-color: #d8a45b;
+}
+
+/* <!-- how it works --> */
+.how-it-works {
+  background-color: #c97253;
+  display: flex;
+  align-items: center;
+}
+
+#video {
+  margin: 3rem auto;
+  border: 10px solid #7a7570d2;
+  border-radius: 0.2rem;
+}
+
+/* <!-- Pricing --> */
+
+.pricing {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #d8a45b;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.price {
+  background-color: #d2cec2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+.price h3 {
+  color: #7a7570;
+  text-shadow: 2px 2px 2px #d8a45b;
+  font-weight: bold;
+  background-color: #d2cec2;
+}
+
+.price p {
+  padding: 0.25rem;
+  background-color: #d2cec2;
+}
+
+.price button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  background-color: #7a7570;
+  color: antiquewhite;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.price button:hover {
+  background-color: #c97253;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: seashell;
+  width: 100%;
+  background-color: #e0d5c1;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link h4 {
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-link h4:hover {
+  background-color: #7a7570;
+}
