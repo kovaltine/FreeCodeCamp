@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+
+    <!-- this is how I get fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>Kira's To Do List</h1>
+    </header>
+    
+<!-- https://www.youtube.com/watch?v=Ttf3CEsEwMQ&list=PLDn7i8_hhZYn2H8XCkNq6OQctXiFzS6QN&index=7 -->
+
+
+    <form>
+        <input type="text" class = "todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list">
+        </ul>
+    </div>
+    <div class="todo">
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
