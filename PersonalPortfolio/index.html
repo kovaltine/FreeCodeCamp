@@ -8,95 +8,103 @@
     <title>Personal Portfolio</title>
 </head>
 <body>
-
-        <!-- navigation bar -->
-
-
-    <!-- introductory message -->
+    
     <header>
-        <div id="welcome-section">
-            <h1>Hi, my name is Kira</h1>
-            <p>I'm a web developer from Ontario Canada</p>
-            <img src="./images/AirBrush_20180929185559.jpg" alt="my profile picture" id="profile-picture">
+        
+<!-- navigation bar -->
+        <div id="navbar">
+                <a href="#welcome-section">About Me</a>
+                <a href="#projects">My Work</a>
+                <a href="#Contact">Contact</a>
         </div>
-
-        <!-- twitter, linkedin, and github icons? instead of links? -->
-
         <!-- an arrow shows up after a few seconds, you can click on it and it takes you to the projects section -->
     </header>
-        <div id="navbar">
-            <div class="external-links">
-            <a href="https://github.com/kovaltine" class="link">GitHub</a>
-            <a href="www.linkedin.com/in/kira-overton-5a34b1bb" class="link">LinkedIn</a>
-            <a href="#" class="link">Twitter</a>
-        </div>
-
-            <!-- dropdown menu -->
-            <div class="dropdown">
-                <a href="#projects">
-                    <button class="dropbtn">Website Templates</button>
-                </a>
-                <div class="dropdown-content">
-                    <a href="#teaAndLilacs">Tea and Lilacs</a>
-                </div>
+        
+    <!-- introductory message -->
+    <div id="welcome-section">
+        <h1>Hi, my name is Kira</h1>
+        <p>I'm a web developer from Ontario Canada</p>
+        <img src="./images/AirBrush_20180929185559.jpg" alt="my profile picture" id="profile-picture">
+        <div class="external-links">
+            <a href="https://github.com/kovaltine" class="link">
+                <img src="./images/GitHub-Mark-Light-64px.png" alt="Github logo" class="logo">Github</a>
+            <a href="https://linkedin.com/in/kira-overton-5a34b1bb" class="link" >
+                <img src="./images/LI-In-Bug.png" alt="LinkedIn Logo" class="logo">LinkedIn</a>
+            <a href="#" class="link">
+                <img src="./images/2021 Twitter logo - white.png" alt="Twitter Logo" class="logo">Twitter</a>
             </div>
-
-            <div class="dropdown">
-                <a href="#applications">
-                    <button class="dropbtn">Applications</button>
-                </a>
-                <div class="dropdown-content">
-                    <br>
-                    <a href="#clock">Digital Clock</a>
-                    <br>
-                    <a href="#rock-paper-scissors">Rock Paper Scissors</a>
-                    <a href="#calculator">Calculator</a>
-                    <a href="#todo">To Do List</a>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
     <!-- project Tiles -->
-    <div id="projects">
-
-        <!-- project tiles: websites -->
-        <div id="websites">
-        <!-- internal links don't work rn -->
+    
+<h1 class="new-section">My Work</h1>
+    <div class="projects">
         <div class="project-tile" id="teaAndLilacs">
-            <h1>Website Sample</h1>
-            <a href="./teaAndLilacs/index.html" class="project">Tea & Lilacs</a>
+            <a href="./teaAndLilacs/index.html" class="project">
+                <h3>Tea and Lilacs</h3>
+                <img src="./images/T&LScreenshot.png" alt="tea and lilacs screenshot"></a>
         </div>
-    </div>
-
-    <!-- project tiles:applications -->
-    <div id="applications">
         <!-- fix timeout issue -->
         <div class="project-tile" id="clock">
-            <h1>Digital Clock</h1>
-                <a href="./DigitalClock/clock.html" class="project">Digital Clock</a>
+                <a href="./DigitalClock/clock.html" class="project">
+                    <h3>Digital Clock</h3>
+                <img src="./images/clockScreenshot.png" alt="digital clock screenshot"></a>
         </div>
                 
         <!-- show what the computer drew -->
         <div class="project-tile" id="rock-paper-scissors">
-            <h1>Rock Paper Scissors</h1>
-                <a href="./RockPaperScissors/" class="project">Rock Paper Scissors</a>
+                <a href="./RockPaperScissors/" class="project">
+                    <h3>Rock Paper Scissors</h3>
+                <img src="./images/rpsScreenshot.png" alt="Rock Paper Scissors screenshot"></a>
         </div>
                 
         <div class="project-tile" id="calculator">
-            <h1>Calculator</h1>
-                <a href="./calculator/" class="project">Calculator</a>
+                <a href="./calculator/" class="project">
+                    <h3>Calculator</h3>
+                <img src="./images/calcScreenshot.png" alt="Calculator screenshot"></a>
         </div>
                 
         <div class="project-tile" id="todo">
-            <h1>To Do List</h1>
-                <a href="./ToDo/" class="project">To Do List</a>
+                <a href="./ToDo/" class="project">
+                    <h3>To Do List</h3>
+                <img src="./images/ToDoScreenshot.png" alt="To do screenshot"></a>
         </div>
-
     </div>
 
-    </div>
-    
-    
+    <div class="Contact" id="#Contact">
+        <!-- contact form -->
+        <h1 class="new-section">Contact</h1>
+        <h2>Send Me A Message</h2>
+            <br>
+                <form action="https://formsubmit.co/1d1e8907b32b9057f4c34d932b416458"
+                    method="POST">
+                    <label for="name">Your Name: </label>
+                    
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+                <br>
+                <label for="email">Your Email: </label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+                <br>
+                <!-- <label for="message">Message: </label>
+                <br> -->
+                <textarea id="message" name="message" placeholder="Tell me how I can help..." required></textarea>
+                <br>
+                <input type="submit" value="Send" id="send">
+
+                <!-- this is for a THANK YOU page. doesn't really work -->
+                <!-- <input type="hidden" name="_next" target="_blank"> -->
+                </form>
+
+        <div class="contact-links">
+            <a href="https://github.com/kovaltine" class="link">
+                <img src="./images/GitHub-Mark-Light-64px.png" alt="Github logo" class="logo">Github</a>
+            <a href="https://linkedin.com/in/kira-overton-5a34b1bb" class="link" >
+                <img src="./images/LI-In-Bug.png" alt="LinkedIn Logo" class="logo">LinkedIn</a>
+            <a href="#" class="link">
+                <img src="./images/2021 Twitter logo - white.png" alt="Twitter Logo" class="logo">Twitter</a>
+            </div>
+        </div>
+   
 </body>
 </html>
