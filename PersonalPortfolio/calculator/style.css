@@ -8,6 +8,17 @@
   font-weight: normal;
 }
 
+h2 {
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
 p {
   color: black;
 }

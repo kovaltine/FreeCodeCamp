@@ -1,98 +1,95 @@
-@media screen and(max-width: 600px) {
-  * {
-    color: blue;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* <!-- navigation bar --> */
 
 #navbar {
-  display: flex;
+  top: 0vh;
+  position: fixed;
+  z-index: 1;
   justify-content: flex-end;
   width: 100%;
-  background-color: brown;
+  background-color: #002939;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  background-image: url(./images/headerPattern.jpg);
-  background-position: center;
-  background-position-x: center;
-  background-position-y: center;
-  background-size: 100%;
+  height: 3rem;
 }
 
 #navbar a {
-  padding: 0.5rem;
+  padding: 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #e6e4db;
+  transition: color 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+  color: #f87575;
+}
+
+#navbar img {
+  display: flex;
+  align-items: flex-start;
+  left: 1rem;
+}
+
+#logo {
+  position: absolute;
+  height: 2rem;
 }
 
 /* <!-- introductory message --> */
 
 #welcome-section {
   height: 100vh;
-  background-color: burlywood;
+  /* this adds a tint over the background image */
+  background: linear-gradient(rgba(41, 39, 39, 0.45), rgba(41, 39, 39, 0.45)),
+    url(./images/pexels-iva-muškić-691710.jpg);
+  background-position: center;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
 
 #welcome-section h1 {
-  top: 20%;
+  top: 18%;
   left: 50%;
   position: absolute;
   text-align: center;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  color: #e6e4db;
+  text-shadow: 5px 5px 10px #0c0a0a;
+  font-size: 3rem;
 }
 
 #welcome-section #profile-picture {
   height: 30%;
   left: 50%;
-  top: 50%;
+  top: 42%;
   border-radius: 8rem;
   position: absolute;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px #0a0909;
 }
 
 #welcome-section p {
-  top: 30%;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* external links */
-.external-links {
   top: 70%;
   position: absolute;
   left: 50%;
-  background-color: hotpink;
-  width: 60%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.external-links a {
-  color: green;
-  text-decoration: none;
-  flex-direction: column;
-  background-color: greenyellow;
-  width: 100%;
-  height: 20%;
-  padding: 1rem 2rem;
-  /* align text in middle of container? */
-}
-
-.logo {
-  width: 2rem;
-  align-items: center;
+  color: #e6e4db;
+  text-shadow: 3px 3px 5px #0a0909;
+  font-size: 1rem;
+  width: 80%;
 }
 
 /* <!-- project Tiles --> */
@@ -100,16 +97,18 @@
 .new-section {
   width: 100%;
   text-align: center;
-  background-color: indianred;
-  padding: 0.5rem;
+  background-color: #002939;
+  padding: 2rem;
+  color: #e6e4db;
+  letter-spacing: 5px;
 }
 
 .projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: teal;
-  width: 80%;
+  background-color: #e6e4db;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -119,8 +118,9 @@
   width: 30%;
   margin: 2rem;
   object-fit: cover;
-  background-color: yellow;
-  border: 5px solid violet;
+  background-color: #e6e4db;
+  border: 5px solid #f87575;
+  box-shadow: 5px 5px 10px #4d4242;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -128,8 +128,8 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: black;
-  background-color: thistle;
+  color: #e6e4db;
+  background-color: #4d4242;
 }
 
 .project-tile img {
@@ -146,12 +146,21 @@
   transform: scale(1.1);
 }
 
+.project-tile a:hover {
+  opacity: 0.5;
+}
+
 /* <!-- contact form --> */
 
+.Contact {
+  background-color: #4d4242;
+}
+
 .Contact h2 {
-  color: maroon;
   text-align: center;
   margin-top: 2rem;
+  color: #f87575;
+  text-shadow: 3px 3px 5px black;
 }
 
 .Contact form {
@@ -159,35 +168,46 @@
   flex-direction: column;
   padding: 0.5rem;
   align-items: center;
+  color: #e6e4db;
 }
 
 form input {
   padding: 0.5rem;
+  color: #0a0909;
+  font-size: 1rem;
 }
 
 #message {
-  background-color: mediumaquamarine;
   width: 50%;
   height: 15rem;
   padding: 1rem;
+  font-size: 1rem;
 }
 
 #send {
-  background-color: mediumorchid;
+  background-color: #002939;
   padding: 1rem;
   border: none;
   width: 10%;
   transition: transform 0.2s ease-in-out;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  color: #e6e4db;
 }
 
 #send:hover {
   transform: scale(1.1);
-  background-color: mediumseagreen;
+  background-color: #f87575;
+}
+
+#send:active {
+  background-color: #f87575;
 }
 
 .contact-links {
-  background-color: mediumspringgreen;
+  background: linear-gradient(rgba(41, 39, 39, 0.45), rgba(41, 39, 39, 0.45)),
+    url(./images/pexels-iva-muškić-691710.jpg);
+  background-position: center;
+  background-size: cover;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -197,13 +217,63 @@ form input {
 .contact-links a {
   padding: 2rem;
   text-decoration: none;
-  color: black;
-  transition: transform 0.3s ease-in-out;
+  color: #e6e4db;
+  text-shadow: 3px 3px 5px black;
+}
+
+.contact-links a img {
+  height: 3rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .contact-links a img:hover {
   transform: scale(1.3);
 }
 
-.contact-links a:hover {
+@media screen and (max-width: 600px) {
+  #navbar a {
+    padding: 0.5rem;
+    letter-spacing: none;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  #welcome-section #profile-picture {
+    height: 20%;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-tile {
+    width: 80%;
+  }
+
+  #message {
+    width: 90%;
+  }
+
+  #send {
+    width: 30%;
+  }
+
+  .contact-links {
+    padding: 1rem;
+  }
+
+  .contact-links a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-links a img {
+    height: 1.5rem;
+  }
 }

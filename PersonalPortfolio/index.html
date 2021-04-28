@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Personal Portfolio</title>
+
+    <link rel="shortcut icon" type="png" href="./images/pixil-layer-Background.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+<title>Kira's Code</title>
 </head>
 <body>
     
@@ -13,6 +18,7 @@
         
 <!-- navigation bar -->
         <div id="navbar">
+            <img src="./images/pixil-layer-Background.png" alt="logo" id="logo">
                 <a href="#welcome-section">About Me</a>
                 <a href="#projects">My Work</a>
                 <a href="#Contact">Contact</a>
@@ -23,26 +29,25 @@
     <!-- introductory message -->
     <div id="welcome-section">
         <h1>Hi, my name is Kira</h1>
-        <p>I'm a web developer from Ontario Canada</p>
+        
         <img src="./images/AirBrush_20180929185559.jpg" alt="my profile picture" id="profile-picture">
-        <div class="external-links">
-            <a href="https://github.com/kovaltine" class="link">
-                <img src="./images/GitHub-Mark-Light-64px.png" alt="Github logo" class="logo">Github</a>
-            <a href="https://linkedin.com/in/kira-overton-5a34b1bb" class="link" >
-                <img src="./images/LI-In-Bug.png" alt="LinkedIn Logo" class="logo">LinkedIn</a>
-            <a href="#" class="link">
-                <img src="./images/2021 Twitter logo - white.png" alt="Twitter Logo" class="logo">Twitter</a>
-            </div>
+        <p>I'm a web developer from Ontario Canada.
+            <br>
+            <br>
+        Over the last two years I have worked on a variety of projects, some of which you can see below. I'm familiar with HTML, CSS, JavaScript, and others.
+        <br>
+        If you want to see what I'm up to now follow me on Twitter, GitHub, or LinkedIn. I'd love to hear from you!</>
     </div>
 
 
     <!-- project Tiles -->
     
 <h1 class="new-section">My Work</h1>
-    <div class="projects">
+    <div class="projects" id="projects">
+
         <div class="project-tile" id="teaAndLilacs">
             <a href="./teaAndLilacs/index.html" class="project">
-                <h3>Tea and Lilacs</h3>
+                <h3>Tea and Lilacs Page</h3>
                 <img src="./images/T&LScreenshot.png" alt="tea and lilacs screenshot"></a>
         </div>
         <!-- fix timeout issue -->
@@ -72,7 +77,7 @@
         </div>
     </div>
 
-    <div class="Contact" id="#Contact">
+    <div class="Contact" id="Contact">
         <!-- contact form -->
         <h1 class="new-section">Contact</h1>
         <h2>Send Me A Message</h2>
@@ -97,14 +102,15 @@
                 </form>
 
         <div class="contact-links">
-            <a href="https://github.com/kovaltine" class="link">
+            <a href="https://github.com/kovaltine" class="link" id="profile-link" target="_blank">
                 <img src="./images/GitHub-Mark-Light-64px.png" alt="Github logo" class="logo">Github</a>
-            <a href="https://linkedin.com/in/kira-overton-5a34b1bb" class="link" >
+            <a href="https://linkedin.com/in/kira-overton-5a34b1bb" class="link" target="_blank">
                 <img src="./images/LI-In-Bug.png" alt="LinkedIn Logo" class="logo">LinkedIn</a>
-            <a href="#" class="link">
+            <a href="#" class="link" target="_blank">
                 <img src="./images/2021 Twitter logo - white.png" alt="Twitter Logo" class="logo">Twitter</a>
             </div>
         </div>
    
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
