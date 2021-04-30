@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="png" href="./images/pixil-layer-Background.png"/>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="./app.js"></script>
+    
+    <title>Clock</title>
+</head>
+<body onload="getQuote()">
+
+    <!-- clock section -->
+    <div class="clock">
+            <div id="time">
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+            </div>
+    </div>
+
+    <!-- quote section -->
+    <div class="quotes">
+        <button id="quoteButton" onclick="getQuote()">Quote of the Hour</button>
+        <br>
+        <div id="quoteAuthor"></div>
+        <br>
+        <div id="hourlyQuote"></div>  
+        </div>    
+</body>
+
+</html>
