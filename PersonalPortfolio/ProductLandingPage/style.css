@@ -37,46 +37,45 @@
 }
 
 #nav-bar {
-  justify-content: flex-end;
-  width: 100%;
-  display: flex;
-  align-items: baseline;
-}
-
-.nav-link {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   text-decoration: none;
   height: 100%;
   width: 80%;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
-  vertical-align: middle;
 }
 
-.nav-link li {
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#nav-bar li {
   list-style-type: none;
+  padding: 1.25rem 2rem;
 }
 
-.nav-link li a {
+#nav-bar li a {
   text-decoration: none;
   color: #fefae0;
 }
 
-.nav-link li a:hover {
+#nav-bar li a:hover {
   color: #dda15e;
 }
 
 /* <!-- welcome form --> */
 .welcome-message {
-  height: 50vh;
+  height: 50%;
   background: linear-gradient(rgba(71, 70, 70, 0.363), rgba(71, 70, 70, 0.363)),
     url(./images/pexels-brian-de-karma-1686302.jpg);
   background-position: top;
   background-size: cover;
   color: #bc6c25;
   text-align: center;
+  position: relative;
 }
 
 .welcome-message h2 {
@@ -123,6 +122,7 @@
   letter-spacing: 2pt;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
+  position: relative;
 }
 
 #submit:hover {
@@ -262,8 +262,12 @@ footer {
 
 @media screen and (max-width: 930px) {
   #header-img {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #header h2 {
+    padding-top: 0.7rem;
   }
 
   .pricing {
@@ -314,11 +318,12 @@ footer {
   body {
     overflow-x: hidden;
   }
-  .nav-link {
+
+  .nav-links {
     position: absolute;
     right: 0px;
-    height: 40vh;
-    top: 0;
+    height: 50vh;
+    top: 1rem;
     background-color: #0b132b;
     display: flex;
     flex-direction: column;
@@ -326,12 +331,15 @@ footer {
     /* when we click on the burger, take the transform and put it back to zero */
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    display: flex;
     width: 40%;
     justify-content: space-around;
-    text-align: right;
   }
 
+  .nav-links li {
+    opacity: 0;
+  }
+
+  /* translate X back to 0% from 100% */
   .nav-active {
     transform: translateX(0%);
   }
@@ -357,10 +365,6 @@ footer {
   }
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-  }
-
-  .nav-link li {
-    opacity: 0;
   }
 
   /* create the burger icon */
@@ -389,16 +393,16 @@ footer {
     overflow: hidden;
   }
 
-  .nav-link li {
+  #nav-bar ul {
     list-style: none;
   }
-  .nav-link li a {
+  #nav-bar li a {
     text-decoration: none;
     color: #fefae0;
     transition: color 0.3s ease-in-out;
   }
 
-  .nav-link li a:active {
+  #nav-bar li a:active {
     color: #dda15e;
   }
 }

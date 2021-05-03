@@ -4,8 +4,8 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     //when we click nav-links, we want it to get nav-active
-    const nav = document.querySelector('.nav-link');
-    const navLinks = document.querySelectorAll('.nav-link li');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
 
     //toggle nav
     burger.addEventListener('click', () => {
