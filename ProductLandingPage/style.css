@@ -1,169 +1,404 @@
-@media screen and (max-width: 600px) {
-  * {
-    background-color: hotpink;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* navigation bar */
+/* header/nav bar */
 
-.nav #nav-bar {
-  width: 100%;
+#header {
   display: flex;
   position: fixed;
-  justify-content: flex-end;
-  /* this right here saved my life ^^ */
-  align-items: center;
-  z-index: 1;
-  top: 1rem;
-  background-color: honeydew;
-  height: 3.5rem;
+  width: 100%;
   top: 0;
+  background-color: #0b132b;
+  z-index: 1;
 }
 
-.nav-link a {
+#header h2 {
+  letter-spacing: 4pt;
+  font-size: smaller;
+  align-items: baseline;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#header-img {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  left: 0;
+}
+
+#header h2 {
+  padding-top: 1.2rem;
+  color: #fefae0;
+}
+
+#nav-bar {
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-decoration: none;
-  color: green;
-  background-color: hotpink;
-  padding: 1rem 4rem;
+  height: 100%;
+  width: 80%;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  vertical-align: middle;
+}
+
+.nav-link li {
+  list-style-type: none;
+}
+
+.nav-link li a {
+  text-decoration: none;
+  color: #fefae0;
+}
+
+.nav-link li a:hover {
+  color: #dda15e;
+}
+
+/* <!-- welcome form --> */
+.welcome-message {
+  height: 50vh;
+  background: linear-gradient(rgba(71, 70, 70, 0.363), rgba(71, 70, 70, 0.363)),
+    url(./images/pexels-brian-de-karma-1686302.jpg);
+  background-position: top;
+  background-size: cover;
+  color: #bc6c25;
+  text-align: center;
+}
+
+.welcome-message h2 {
+  padding-top: 8rem;
+  font-size: 3rem;
+  letter-spacing: 4pt;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 3px 3px 3px #000000;
+}
+
+.welcome-message p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #bc6c25;
+  text-shadow: 2px 2px 1px #000000;
+  letter-spacing: 2px;
+}
+
+.welcome-message form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+#email {
+  text-align: center;
+  padding: 0.5rem;
+  font-style: italic;
+  background-color: whitesmoke;
+}
+#submit {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: #0b132b;
+  color: #fefae0;
+  letter-spacing: 2pt;
+  font-weight: bold;
   transition: background-color 0.3s ease-in-out;
 }
 
-.nav a:hover {
-  background-color: indianred;
+#submit:hover {
+  background-color: #b15c13;
 }
 
-/* nav logo */
-.fa-burn:before {
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  color: brown;
-  z-index: 2;
-}
+/* <!-- features --> */
 
-.fa-burn h2 {
-  position: fixed;
-  left: 10px;
-  top: 25px;
-  color: brown;
-  z-index: 2;
-}
-
-/* <!--  Welcome message  --> */
-
-.container {
-  width: 80%;
+#features {
+  margin-top: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.intro-message {
-  height: 50vh;
-  background-image: url(./images/pexels-pixabay-220603.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
+  background-color: #3a506b;
   text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.intro-message h1 {
-  position: relative;
-  letter-spacing: 3px;
-  margin-top: 10vh;
-  color: rgb(160, 98, 10);
-  text-shadow: 2px 2px rgba(190, 50, 31, 0.651);
-}
-
-.intro-message #email {
-  width: 20rem;
-  text-align: center;
-  margin-top: 10vh;
-  padding: 0.5rem;
-  box-shadow: 3px 3px rgba(63, 63, 59, 0.452);
-  border-radius: 2rem;
-  border: none;
-  background-color: rgba(216, 216, 202, 0.678);
-}
-
-.intro-message #email:active {
-  border: none;
-}
-
-/* change the way this looks when active ^^ */
-
-.intro-message #submit {
-  width: 20%;
-  margin-top: 5vh;
-  padding: 0.5rem;
-  border: none;
-  background-color: rgba(95, 158, 160, 0.76);
-  font-weight: bold;
-}
-
-#submit:hover {
-  cursor: pointer;
-  background-color: chartreuse;
-}
-
-/* <!-- Product advertising  --> */
-.product-desc {
+.section {
   display: flex;
-  flex-direction: column;
-  background-color: chocolate;
+  flex-direction: row;
+  background-color: #b15c13;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  justify-content: space-evenly;
+  font-size: 30px;
+  color: #d2cec2;
+  text-shadow: 3px 3px 3px #000000;
+  border-radius: 0.5rem;
+}
+
+.fa-frog {
+  font-size: 50px;
+  color: #82973d;
+  text-shadow: 3px 3px 3px #283618;
+}
+
+.fa-gift {
+  font-size: 50px;
+  color: #e97cc4;
+  text-shadow: 3px 3px 3px #5e254b;
+}
+
+.fa-cloud-moon {
+  font-size: 50px;
+  color: #e0d5c1;
+  text-shadow: 3px 3px 3px #31312c;
+}
+
+/* <!-- how it works --> */
+.how-it-works {
+  background-color: #b15c13;
+  display: flex;
   align-items: center;
 }
 
-.product-desc .ad {
+iframe {
+  margin: 3rem auto;
+  border: 10px solid #7a7570d2;
+  border-radius: 0.2rem;
+}
+
+/* <!-- Pricing --> */
+
+.pricing {
   display: flex;
-  width: 80%;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #3a506b;
   margin-left: auto;
   margin-right: auto;
+  padding: 2rem;
+}
+
+.price {
+  background-color: #d2cec2;
   padding: 1rem;
-}
-
-/* icons can be treated like text */
-.ad .icon {
-  width: 50%;
-  background-color: cornflowerblue;
-  font-size: 50px;
-  text-align: right;
-  padding-right: 2rem;
-}
-
-.ad h2 {
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: crimson;
-}
-
-/* <!-- #how-it-works --> */
-
-#how-it-works {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* <!--  Sales  --> */
-
-.sales {
-  display: flex;
-  justify-content: space-between;
   text-align: center;
+  border-radius: 0.2rem;
 }
 
-.sale {
-  margin-top: 1rem;
-  box-shadow: 5px 5px 5px 5px grey;
-  margin-bottom: 2rem;
+.price h3 {
+  color: #0b132b;
+  text-shadow: 2px 2px 2px #e0d5c1;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.price p {
+  padding: 0.25rem;
+}
+
+.price button {
   padding: 1rem;
-  width: 30%;
+  margin-top: 0.5rem;
+  border: none;
+  background-color: #3a506b;
+  color: #e0d5c1;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.price button:hover {
+  color: #b15c13;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: seashell;
+  width: 100%;
+  background-color: #e0d5c1;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link h4 {
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-link h4:hover {
+  background-color: #7a7570;
+}
+
+@media screen and (max-width: 930px) {
+  #header-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .pricing {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .price {
+    width: 60%;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 8vh;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  .welcome-message h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .price p {
+    font-size: 0.75rem;
+  }
+
+  .price {
+    width: 90%;
+  }
+
+  /* the rest of the sections are for the burger menu */
+  body {
+    overflow-x: hidden;
+  }
+  .nav-link {
+    position: absolute;
+    right: 0px;
+    height: 40vh;
+    top: 0;
+    background-color: #0b132b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* when we click on the burger, take the transform and put it back to zero */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    text-align: right;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  /* create an animation. The next lines will make an X when the burger is clicked*/
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* uses javascript and the empty html div */
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-link li {
+    opacity: 0;
+  }
+
+  /* create the burger icon */
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #b15c13;
+    margin: 5px;
+    /* when it turns back into a burger it will be animated */
+    transition: all 0.3s ease;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 1vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* the nav is hidden offscreen*/
+    overflow: hidden;
+  }
+
+  .nav-link li {
+    list-style: none;
+  }
+  .nav-link li a {
+    text-decoration: none;
+    color: #fefae0;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-link li a:active {
+    color: #dda15e;
+  }
 }

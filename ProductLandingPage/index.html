@@ -1,100 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-  <title>Candles</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
 
-  
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- logo -->
+    <link rel="icon" href="./images/pixil-layer-Background.png">
+
+
+    <title>Adventure Bus</title>
 </head>
 <body>
-<!-- navigation menu   -->
-<header id="header">
-<div class="nav">
-    <div id="header-img">
-        <img src="./images/pexels-content-pixie-2736542.jpg" alt="">
-    <i class="fas fa-burn"><h2>Illuminate Candles</h2></i>
-</div>
-<nav>
-<div id="nav-bar">
-    <div class="nav-link"><a href="#features">Features</a></div>
-    <div class="nav-link"><a href="#how-it-works">How It Works</a></div>
-    <div class="nav-link"><a href="#pricing">Pricing</a></div>
-</div>
-</nav>
-</div>
-</header>
 
+    <!-- logo -->
+    <header id="header">
+            <img src="./images/LogoMakr-2ntfVG.png" alt="bus" id="header-img">
+            <h2>Adventure Bus</h2>
 
-<div class="container">
-<!--  Welcome message  -->
-  <div class="intro-message">
-    <h1>Handcrafted Quality Items</h1>
-    <form id="form">
-    <input type="email" value="Enter your email..." id="email">
-    <submit id="submit" url="https://www.freecodecamp.com/email-submit">Get Started</submit>
-</form>
-  </div>
-  
-<!-- Product advertising  -->
-  <div class="product-desc" id="features">
-      <div class="ad">
-    <div class="icon">
+        <!-- navigation bar -->
+        <nav id="nav-bar">
+            <ul class="nav-link">
+                <li>
+                    <a href="#features" >Features</a>
+                </li>
+                <li>
+                    <a href="#how-it-works">How It Works</a>
+                </li>
+                <li>
+                    <a href="#pricing">Pricing</a>
+                </li>
+            </ul>
+            
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- welcome form -->
+    <div class="welcome-message">
+    <h2>Adventure Bus</h2>
+    <br>
+    <br>
+    <p>Join us for an adventure across Canada</p>
+    <form id="form"  action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="example@email.com"/>
+        <input type="submit" id="submit" name="submit"/>
+    </form>
+</div>
+
+<!-- features -->
+<div class="features" id="features">
+    <div class="section">
         <i class="fas fa-frog"></i>
+        <h2>Unique Scents</h2>
     </div>
-    <h2>Unique Scents</h2>
+    <div class="section">
+        <i class="fas fa-gift"></i>
+        <h2>Great Gift Ideas</h2>
+    </div>
+    <div class="section">
+        <i class="fas fa-cloud-moon"></i>
+        <h2>Overnight Trips</h2>
+    </div>
+
 </div>
+
+<!-- how it works -->
+
+<div class="how-it-works" id="how-it-works">    
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xlQmXz7wzLE?start=241" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     
-<div class="ad">
-    <div class="icon">
-      <i class="fas fa-gift"></i>
+<!-- Pricing -->
+<div class="pricing" id="pricing">
+    <div class="price">
+        <h3>Adventure Pack 1</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>Select</button>
     </div>
-    <h2>Gift ideas</h2>
-</div>
-
-<div class="ad">
-    <div class="icon">
-      <i class="fas fa-cloud-moon"></i>
+    <div class="price">
+        <h3>Adventure Pack 2</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>Select</button>
     </div>
-    <h2>Overnight shipping</h2>
-</div>
-
-  </div>
-
-<!-- #how-it-works -->
-<div class="how-it-works" id="how-it-works">
-    <div id="video">
-        <iframe width="500" height="420" src="https://www.youtube.com/watch?v=kSVwD7S5VGk"></iframe>
-    </div>
-</div>
-
-  <!--  Sales  -->
-  <div class="sales" id="pricing">
-  <div class="sale">
-    <h3>One Candle for $15</h3>
-    <p>Lorem ipsum dolor sit.</p>
-    <p>Lorem ipsum dolor sit.</p>
-    <p>Lorem ipsum dolor sit.</p>
-  </div>
-  <div class="sale">
-    <h3>Three Candles for $25</h3>
-    <p>Lorem ipsum dolor sit.</p>
-    <p>Lorem ipsum dolor sit.</p>
-    <p>Lorem ipsum dolor sit.</p>
-  </div>
-  <div class="sale">
-    <h3>Five Candles for $30</h3>
-    <p>Lorem ipsum dolor.</p>
-    <p>Lorem ipsum dolor.</p>
-    <p>Lorem ipsum dolor.</p>
-  </div>
+    <div class="price">
+        <h3>Adventure Pack 3</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <button>Select</button>
     </div>
 </div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-link">
+    <h4>Privacy</h4>
+    <h4>Terms</h4>
+    <h4>Contact</h4>
+</div>
+<p>Copyright &copy 2021, Bus Adventures</p>
+</footer>
+<!-- for the burger menu -->
+<script src="app.js"></script>
 </body>
+
 </html>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
